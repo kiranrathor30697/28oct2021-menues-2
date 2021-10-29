@@ -4,9 +4,450 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Menues 2</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Menus 2</title>
+        <style>
+            body{
+                margin: 0px;
+                background-image: url(img/page-background.jpg);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .k_box1{
+                width: 980px;
+                height: 10000px;
+                background-image:url(img/body-background.png);
+                margin: 38px auto;
+                padding: 2px;
+                
+            }
+            .border_radius{
+                border-radius: 7px;
+            }
+            header{
+                padding: 0px 10px;
+                height: 400px;
+                border: 1px dashed red;
+            }
+            h1{
+                color: #707070;
+                margin-left: 15px;
+                margin-bottom: 0px;
+            }
+            nav{
+                height: 40px;
+                margin-top: 0px;
+            }
+            .nav1{
+                background-color:#202020;
+            }
+            .nav2{
+                background-color: #404040;
+            }
+            .nav3{
+                background-color:#C0C0C0;
+            }
+            .nav3 > ul >li a{
+                color: #505050;
+            }
+            .nav4{
+                background-color: #303030;
+            }
+            .nav5{
+                background-color:#FAFAFA;
+            }
+            .nav5 > ul >li a{
+                color: #5f5f5f;
+            }
+            .nav6{
+                background-color: #303030;
+            }
+            .nav7{
+                background-color:#FAFAFA;
+            }
+            .nav7 > ul >li a{
+                color: #5f5f5f;
+            }
+            .nav8{
+                background-color: #303030;
+            }
+           nav >ul > li{
+                display: inline-block;
+            }
+            nav >ul li{
+                list-style: none;
+            }
+            nav a{
+                padding: 12px;
+                text-decoration: none;
+                display: block;
+                font-size: 0.8em;
+                color: #E9E9E9;
+            }
+            .down_arrow{
+                padding-left: 8px;
+            }
+            .none{
+                visibility: hidden;
+            }
+            ul > li{
+                position: relative;
+            }
+            nav > ul >li:hover > a{
+                background-color: #4a4a4a;
+            }
+            .submenu{
+                position: absolute;
+                top: 39px;
+                left: 0px;
+                width: 130px;
+                background-color: #4a4a4a;
+                padding: 0px;
+                display: none;
+            }
+            .submenu > li > a{
+                height: 15px;
+                font-size: 0.8em;
+                background-color: #4a4a4a;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .menu li:hover .submenu{
+                display: block;
+            }
+            .right_arrow{
+                padding-right: 7px !important;
+                visibility: hidden;
+            }
+            .submenu li:hover .right_arrow{
+                visibility: visible;
+            }
+            .submenu li:hover a{
+                background-color: #202020;
+            }
+        </style>
+
+        <script>
+
+        </script>
     </head>
     <body>
+        <div class="k_box1 border_radius">
+            <header class="border_radius">
+                <h1>Theame 1</h1>
+                <nav class="border_radius nav1">
+                    <ul class="menu border_radius">
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                            <ul class="submenu border_radius">
+                                <li>
+                                    <a href="#"><i class="fas fa-chevron-right right_arrow"></i>WHO WE ARE</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-chevron-right right_arrow"></i>WHO WE DO</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-chevron-right right_arrow"></i>OUR GOALS</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-chevron-right right_arrow"></i>OUR AWARDS</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-chevron-right right_arrow"></i>OUR TEAM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+            <header class="border_radius">
+                <h1>Theame 2</h1>
+                <nav class="border_radius nav2">
+                    <ul>
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <hr>
         
+            <header class="border_radius">
+                <h1>Theame 3</h1>
+                <nav class="border_radius nav3">
+                    <ul>
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+        
+            <header class="border_radius">
+                <h1>Theame 4</h1>
+                <nav class="border_radius nav4">
+                    <ul>
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+        
+            <header class="border_radius">
+                <h1>Theame 5</h1>
+                <nav class="border_radius nav5">
+                    <ul>
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+        
+            <header class="border_radius">
+                <h1>Theame 6</h1>
+                <nav class="border_radius nav6">
+                    <ul>
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+        
+            <header class="border_radius">
+                <h1>Theame 7</h1>
+                <nav class="border_radius nav7">
+                    <ul>
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+        
+            <header class="border_radius">
+                <h1>Theame 8</h1>
+                <nav class="border_radius nav8">
+                    <ul>
+                        <li>
+                            <a href="#">HOME </a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">SERVICES <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">PORTFOLIO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CLIENTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="none"></a>
+                        </li>
+                        <li>
+                            <a href="#">SOCIAL <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">INFO <i class="fas fa-chevron-down down_arrow"></i></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        
+
+
+        <script>
+
+        </script>
     </body>
 </html>
